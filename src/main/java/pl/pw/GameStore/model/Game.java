@@ -1,10 +1,18 @@
-package pl.pw.GameStore;
+package pl.pw.GameStore.model;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
+@Entity
+@Table
 public class Game {
 
+    @Id
+    @GeneratedValue
     private Long id;
     private String title;
     private LocalDate productionYear;
