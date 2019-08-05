@@ -36,5 +36,11 @@ public class GameController {
         return gameService.update(game);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteGame(@PathVariable Long id){
+
+        gameService.delete(id);
+    }
+
 
 }
